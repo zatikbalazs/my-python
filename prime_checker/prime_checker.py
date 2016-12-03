@@ -58,7 +58,7 @@ while True:
         is_prime, evidence = check_prime(number)
 
         if is_prime:
-            print("{} is a prime number.".format(number))
+            print("{} is a PRIME NUMBER.".format(number))
         else:
             print("{} is NOT a prime number.".format(number))
             print(evidence)
