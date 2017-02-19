@@ -2,7 +2,7 @@
 def print_inventory(inventory):
     """
     Prints inventory with values.
-    args: dict inventory
+    args: dict(inventory)
     """
     total_items = 0
 
@@ -23,8 +23,8 @@ def print_inventory(inventory):
 def add_to_inventory(inventory, new_items):
     """
     Adds new items to an existing inventory.
-    args: dict inventory, list new_items
-    return dict inventory
+    args: dict(inventory), list(new_items)
+    return: dict(inventory)
     """
     # Iterate through items of the list.
     for item in new_items:

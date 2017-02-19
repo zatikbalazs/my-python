@@ -2,8 +2,8 @@
 def header(title):
     """
     Prints out a nice header.
-    args: str title
-    return: str header
+    args: str(title)
+    return: str(header)
     """
     # Get the length of title.
     length = len(title)
@@ -16,8 +16,8 @@ def header(title):
 def check_prime(number):
     """
     Checks if the given number is a prime number.
-    args: int number
-    return: bool is_prime, str evidence
+    args: int(number)
+    return: bool(is_prime), str(evidence)
     """
     # Initialize variables.
     is_prime = True

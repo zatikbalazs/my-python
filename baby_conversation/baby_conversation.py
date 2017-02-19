@@ -1,7 +1,7 @@
-# Baby conversation simulator program to test "while" loop.
+# Baby conversation simulator program to test the "while" loop.
 
-# Import module.
-import random
+# Import choice from the random module.
+from random import choice
 
 # Create list of questions.
 questions = ["Why is the sky blue?",
@@ -11,7 +11,7 @@ questions = ["Why is the sky blue?",
              "Is there a face on Mars?"]
 
 # Print question.
-print(random.choice(questions))
+print(choice(questions))
 
 # Require an answer.
 answer = input().strip()

@@ -1,8 +1,8 @@
 def collatz(number):
     """
     Function for the "Collatz Sequence".
-    It receives a positive integer number.
-    It returns a positive integer number.
+    args: int(number)
+    return: int(new_number)
     """
     # Even number given.
     if number % 2 == 0:
@@ -12,8 +12,7 @@ def collatz(number):
     else:
         new_number = (3 * number) + 1
 
-    # Print and return new number.
-    print(new_number)
+    # Return new number.
     return new_number
 
 # Intro text.
@@ -30,6 +29,7 @@ while True:
             # Call the collatz() function until it returns 1.
             while number != 1:
                 number = collatz(number)
+                print(number)
 
             # When we get to number 1.
             if number == 1:

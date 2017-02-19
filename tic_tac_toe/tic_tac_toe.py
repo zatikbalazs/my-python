@@ -7,8 +7,8 @@ import random
 def header(title):
     """
     Prints out a nice header.
-    args: str title
-    return: str header
+    args: str(title)
+    return: str(header)
     """
     # Get the length of title.
     length = len(title)
@@ -35,8 +35,8 @@ def show_board(board):
 def check_win(board):
     """
     Checks whether player has won the game or not.
-    args: dict board
-    return: bool win
+    args: dict(board)
+    return: bool(win)
     """
     if (board["top-l"] == "X" and board["top-m"] == "X" and board["top-r"] == "X") or (board["mid-l"] == "X" and board["mid-m"] == "X" and board["mid-r"] == "X") or (board["low-l"] == "X" and board["low-m"] == "X" and board["low-r"] == "X"):
         win = True
@@ -58,8 +58,8 @@ def check_win(board):
 def valid_move(board, move):
     """
     Checks whether move is valid or not.
-    args: dict board, str move
-    return: bool valid_move
+    args: dict(board), str(move)
+    return: bool(valid_move)
     """
     if move not in board.keys() or board[move] == "X" or board[move] == "O":
         valid_move = False

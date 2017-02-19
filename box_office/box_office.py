@@ -1,10 +1,10 @@
 # Create movies database (dictionary).
 movies = {
-    "Terminator": {"age": 16, "seats": 1},
-    "Gladiator": {"age": 12, "seats": 2},
-    "Yes Man": {"age": 6, "seats": 3},
-    "Mission Impossible": {"age": 12, "seats": 4},
-    "Minions": {"age": 3, "seats": 5}
+    "Terminator":   {"age": 16, "seats": 1},
+    "Gladiator":    {"age": 12, "seats": 2},
+    "Yes Man":      {"age": 6,  "seats": 3},
+    "Pulp Fiction": {"age": 12, "seats": 4},
+    "Minions":      {"age": 3,  "seats": 5}
     }
 
 # Welcome visitor.
