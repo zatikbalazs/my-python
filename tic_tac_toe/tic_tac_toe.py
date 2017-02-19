@@ -113,8 +113,12 @@ while True:
             if game_mode == 1:
 
                 if turn == player_1:
+                    # Explain syntax of moves.
+                    print("Moves: (top|mid|low)-(l|m|r)")
+                    print("Examples: top-l, mid-m, low-r")
+
                     # User enters next move.
-                    move = input("{}'s turn. Where to move? ".format(turn)).strip().lower()
+                    move = input("\n{}'s turn. Where to move? ".format(turn)).strip().lower()
 
                     # If move is invalid.
                     while not valid_move(board, move):
@@ -140,8 +144,12 @@ while True:
 
             # Two player mode.
             else:
+                # Explain syntax of moves.
+                print("Moves: (top|mid|low)-(l|m|r)")
+                print("Examples: top-l, mid-m, low-r")
+
                 # User enters next move.
-                move = input("{}'s turn. Where to move? ".format(turn)).strip().lower()
+                move = input("\n{}'s turn. Where to move? ".format(turn)).strip().lower()
 
                 # If move is invalid.
                 while not valid_move(board, move):
