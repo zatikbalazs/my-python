@@ -2,6 +2,7 @@
 
 # Import modules.
 import random
+import time
 
 # Define functions.
 def header(title):
@@ -122,6 +123,8 @@ while True:
 
                 else:
                     # Computer's move.
+                    print("{} is thinking...".format(player_2))
+                    time.sleep(2)
                     print("{}'s move:".format(player_2))
 
                     # Create list of board keys.
