@@ -8,6 +8,24 @@ of spins on the roulette wheel.
 # Import modules.
 import random
 
+# Define functions.
+def header(title):
+    """
+    Prints out a nice header.
+    args: str(title)
+    return: str(header)
+    """
+    # Get the length of title.
+    length = len(title)
+
+    # Concatenate header string.
+    header = "=" * length + "\n" + title.upper() + "\n" + "=" * length
+
+    return header
+
+# Print header.
+print(header("Roulette Stats"))
+
 # Create a list of numbers on roulette wheel (0-36).
 numbers = [number for number in range(37)]
 
