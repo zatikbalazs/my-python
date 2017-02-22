@@ -18,6 +18,7 @@ spins = int(input("How many spins? ").strip())
 even_hits = 0
 zero_hits = 0
 odd_hits  = 0
+deviation = 0
 
 # Start spins.
 for spin in range(spins):
@@ -33,11 +34,13 @@ for spin in range(spins):
         zero_hits += 1
     elif hit % 2 == 0:
         even_hits += 1
+        deviation += 1
     else:
         odd_hits += 1
+        deviation -= 1
 
     # Display result of current spin.
-    print("{}. spin: {}".format(spin_num, hit))
+    print("{}. hit: {}, deviation: {}".format(spin_num, hit, deviation))
 
 # Display statistics.
 print("=" * 10)
