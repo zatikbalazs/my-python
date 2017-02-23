@@ -58,7 +58,7 @@ for spin in range(spins):
         deviation -= 1
 
     # Display result of current spin.
-    print("{}. hit: {}, deviation: {}".format(spin_num, hit, deviation))
+    print("{}. hit: {},\tdeviation: {}".format(spin_num, hit, deviation))
 
 # Calculate percentages.
 even_percentage = round((even_hits / spins) * 100, 2)
@@ -66,10 +66,10 @@ odd_percentage  = round((odd_hits / spins) * 100, 2)
 zero_percentage = round((zero_hits / spins) * 100, 2)
 
 # Display statistics.
-print("=" * 10)
+print("-" * 10)
 print("Statistics".upper())
-print("=" * 10)
-print("Spins:     {} (100% of 100%)".format(spins))
-print("Even hits: {} ({}% of 48.65%)".format(even_hits, even_percentage))
-print("Odd hits:  {} ({}% of 48.65%)".format(odd_hits, odd_percentage))
-print("Zero hits: {} ({}% of 2.70%)".format(zero_hits, zero_percentage))
+print("-" * 10)
+print("Spins:     {}\t(100% of 100%)".format(spins))
+print("Even hits: {}\t({}% of 48.65%)".format(even_hits, even_percentage))
+print("Odd hits:  {}\t({}% of 48.65%)".format(odd_hits, odd_percentage))
+print("Zero hits: {}\t({}% of 2.70%)".format(zero_hits, zero_percentage))
