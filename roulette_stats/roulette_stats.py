@@ -37,6 +37,7 @@ even_hits = 0
 zero_hits = 0
 odd_hits  = 0
 deviation = 0
+hit_type = None
 
 # Start spins.
 for spin in range(spins):
@@ -50,15 +51,18 @@ for spin in range(spins):
     # Even, odd or zero?
     if hit == 0:
         zero_hits += 1
+        hit_type = "NULL"
     elif hit % 2 == 0:
         even_hits += 1
         deviation += 1
+        hit_type = "EVEN"
     else:
         odd_hits += 1
         deviation -= 1
+        hit_type = "ODD"
 
     # Display result of current spin.
-    print("{}. hit: {},\tdeviation: {}".format(spin_num, hit, deviation))
+    print("{}. hit: {},\t{}\tdeviation: {}".format(spin_num, hit, hit_type, deviation))
 
 # Calculate percentages.
 even_percentage = round((even_hits / spins) * 100, 2)
