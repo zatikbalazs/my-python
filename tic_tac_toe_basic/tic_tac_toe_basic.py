@@ -26,13 +26,23 @@ def player_move(icon):
 
     print("Your turn player {}:".format(number))
 
+    # Player enters next move.
     choice = int(input("Enter your move (1-9): ").strip()) - 1
 
+    # If move is valid, we save the move to the list.
     if board[choice] == " ":
         board[choice] = icon
     else:
         print()
         print("That space is taken!")
+
+        print_board()
+
+        # We give the player another chance to move.
+        if icon == "X":
+            player_move("X")
+        elif icon == "O":
+            player_move("O")
 
 def is_victory(icon):
     """
