@@ -74,6 +74,7 @@ def valid_move(board, move):
 # Print header.
 print(header("Tic Tac Toe Game"))
 
+# Start the game loop.
 while True:
 
     # Create the board as a dictionary.
