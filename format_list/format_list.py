@@ -2,7 +2,7 @@
 def format_list(mylist):
     """
     This function transforms a list into a formatted string.
-    args: list(mylist)
+    params: list(mylist)
     return: str(string)
     """
 

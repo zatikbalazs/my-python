@@ -5,7 +5,7 @@ import re
 def header(title):
     """
     Prints out a nice header.
-    args: str(title)
+    params: str(title)
     return: str(header)
     """
     # Get the length of title.
@@ -19,7 +19,7 @@ def header(title):
 def get_line_count(filename):
     """
     Counts number of lines in a file.
-    args: str(filename)
+    params: str(filename)
     return: int(line_count)
     """
     with open(filename) as file:
@@ -30,8 +30,8 @@ def get_line_count(filename):
 def get_char_list(text, sort=True):
     """
     Creates statistics for all characters in text.
-    args: str(text), bool(sort)
-    return list(char_list)
+    params: str(text), bool(sort)
+    return: list(char_list)
     """
     char_dict = {}
 
@@ -47,8 +47,8 @@ def get_char_list(text, sort=True):
 def get_word_list(text, sort=True):
     """
     Creates statistics for all words in text.
-    args: str(text), bool(sort)
-    return list(word_list)
+    params: str(text), bool(sort)
+    return: list(word_list)
     """
     word_dict = {}
 
@@ -66,8 +66,8 @@ def get_word_list(text, sort=True):
 def get_keyword_density(keyword, text):
     """
     Calculate keyword density in the given text.
-    args: str(keyword), str(text)
-    return int(keyword_count), float(keyword_density)
+    params: str(keyword), str(text)
+    return: int(keyword_count), float(keyword_density)
     """
     # Prepare keyword and text.
     keyword = keyword.lower()

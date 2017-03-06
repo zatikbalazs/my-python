@@ -1,7 +1,7 @@
 def collatz(number):
     """
     Function for the "Collatz Sequence".
-    args: int(number)
+    params: int(number)
     return: int(new_number)
     """
     # Even number given.

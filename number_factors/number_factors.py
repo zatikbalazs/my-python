@@ -2,7 +2,7 @@
 def header(title):
     """
     Prints out a nice header.
-    args: str(title)
+    params: str(title)
     return: str(header)
     """
     # Get the length of title.
@@ -16,7 +16,7 @@ def header(title):
 def show_factors(number):
     """
     Shows factors of the given number.
-    args: int(number)
+    params: int(number)
     return: list(factors)
     """
     # Create list for factor pairs.

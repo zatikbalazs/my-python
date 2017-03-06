@@ -7,7 +7,7 @@ import random
 def header(title):
     """
     Prints out a nice header.
-    args: str(title)
+    params: str(title)
     return: str(header)
     """
     # Get the length of title.
