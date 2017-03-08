@@ -1,10 +1,11 @@
 # My first object oriented programming (OOP) example.
 
 class Account:
-    def __init__(self, name, balance = 0, min_balance = 0):
+    def __init__(self, name, balance = 0, min_balance = 0, interest_rate = 0.1):
         self.name = name
         self.balance = balance
         self.min_balance = min_balance
+        self.interest_rate = interest_rate
 
     def deposit(self, amount):
         self.balance += amount
@@ -18,10 +19,18 @@ class Account:
             return "Transaction refused: not enough funds!"
 
     def show_statement(self):
-        return "Name: {} >>>>> Current Balance: ${}".format(self.name, self.balance)
+        return "Name: {} >>>>> Current Balance: ${} >>>>> Interest rate: {}%".format(self.name, self.balance, self.interest_rate)
 
     def __str__(self):
-        return "Bank account of: {}".format(self.name)
+        return "Bank Account of: {}".format(self.name)
 
     def __del__(self):
         print("Account has been deleted.")
+
+
+class SavingsAccount(Account):
+    def __init__(self, name):
+        super().__init__(name, interest_rate = 0.3)
+
+    def __str__(self):
+        return "Savings Account of: {}".format(self.name)
