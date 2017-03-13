@@ -20,13 +20,33 @@ def header(title):
 print(header("Simple Interest Calculator"))
 
 # User input.
-balance = float(input("Starting balance ($): ").strip())
-interest_rate = float(input("Yearly interest(%): ").strip())
-term = int(input("How many months? ").strip())
+while True:
+    try:
+        balance = float(input("Starting balance ($): ").strip())
+        break
+    except ValueError:
+        print("Only numbers are accepted! Correct format: 1000.00")
+        continue
+
+while True:
+    try:
+        interest_rate = float(input("Yearly interest (%): ").strip())
+        break
+    except ValueError:
+        print("Only numbers are accepted! Example: 2.25")
+        continue
+
+while True:
+    try:
+        term = int(input("How many months? ").strip())
+        break
+    except ValueError:
+        print("Only numbers are accepted! Example: 120")
+        continue
 
 # Print starting conditions.
 print()
-print("Starting balance: $%.2f | Yearly interest: %.2f percent | Term: %d months" % (balance, interest_rate, term))
+print("Starting balance: $%.2f | Yearly interest (percent): %.2f | Term: %d months" % (balance, interest_rate, term))
 print()
 
 # Calculate and show monthly results.
