@@ -3,6 +3,25 @@
 # Import math module.
 import math
 
+# Define function.
+def header(title):
+    """
+    Prints out a nice header.
+    params: str(title)
+    return: str(header)
+    """
+    # Get the length of title.
+    length = len(title)
+
+    # Concatenate header string.
+    header = "=" * length + "\n" + title.upper() + "\n" + "=" * length
+
+    return header
+
+
+# Print header.
+print(header("Hypotenuse calculator"))
+
 # User input.
 while True:
     try:
@@ -24,4 +43,4 @@ while True:
 c = math.hypot(a, b)
 
 # Print result.
-print("The length of the hypotenuse (side C) is: %.2f" % (c))
+print("The length of the hypotenuse is: %.2f" % (c))
