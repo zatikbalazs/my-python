@@ -9,23 +9,27 @@ Step 3: Alter your code so that the word "Capital" is printed to the right
 Step 4: Indicate new lines in your output with the text: "- New Line -"
 """
 
-# Create multi-line text for this exercise.
+# Create multi-line text.
 text  = "This is the first line of my text.\n"
 text += "The text continues with the second line.\n"
 text += "We have come to the last line."
 
-# Initialize variables for the loop.
+# Initialize variables.
 char = 0
 line = 1
 
 # Loop through each character of the text.
 while char < len(text):
+
+    # Get current character.
+    current_char = text[char]
+
     # If it is not a new line.
-    if text[char] != "\n":
-        if text[char].isupper():
-            print("Line:{} Char:{}\t{} Capital".format(line, char, text[char]))
+    if current_char != "\n":
+        if current_char.isupper():
+            print("Line:{} Char:{}\t{} Capital".format(line, char, current_char))
         else:
-            print("Line:{} Char:{}\t{}".format(line, char, text[char]))
+            print("Line:{} Char:{}\t{}".format(line, char, current_char))
 
     # If it is a new line.
     else:
