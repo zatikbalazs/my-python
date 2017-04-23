@@ -1,5 +1,5 @@
 """
-Handling time in Python.
+Time methods in Python.
 """
 
 # Import module.

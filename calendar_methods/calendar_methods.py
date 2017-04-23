@@ -1,5 +1,5 @@
 """
-Calendar functions in Python.
+Calendar methods in Python.
 """
 
 # Import module.
