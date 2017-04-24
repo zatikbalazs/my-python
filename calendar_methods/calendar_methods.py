@@ -9,11 +9,11 @@ import calendar
 cal = calendar.month(1985, 10)
 print(cal)
 
-# Get first weekday.
+# Get first weekday of the calendar.
 output = calendar.firstweekday()
 print(output)
 
-# Set first weekday.
+# Set first weekday of the calendar.
 output = calendar.setfirstweekday(calendar.SUNDAY)
 
 # Get day of the week.
