@@ -2,10 +2,11 @@
 Dates Lab - Coding Exercise
 """
 
-# Import module.
+# Import modules.
 import time
+import datetime
 
-# Current date.
+# Today's date.
 today = time.asctime(time.localtime(time.time()))
 
 # Tomorrow's date.
@@ -22,3 +23,7 @@ print("Today it is:", today)
 print("Tomorrow it will be:", tomorrow)
 print("A year ago it was:", year_ago)
 print("In 100 hours it will be:", hundred_hours)
+
+# ISO format.
+my_birthday = datetime.datetime(1985, 10, 2, 12, 00, 00)
+print("I was born on:", my_birthday.isoformat(" "))
