@@ -20,9 +20,16 @@ while len(names) <= 2:
 print("Saving names... {}".format(names))
 
 # Write to file (as a string).
-file.write(str(names))
+try:
+    file.write(str(names))
 
-# Close file.
-file.close()
+    # Close file.
+    file.close()
 
-print("Names saved!")
+    print("Names saved!")
+
+except IOError:
+    # Close file.
+    file.close()
+
+    print("IO Error!")
