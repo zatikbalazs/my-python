@@ -6,7 +6,12 @@ Step 2: read content with read().
 """
 
 # Open file.
-file = open("example.txt")
+try:
+    file_path = "example.txt"
+    file = open(file_path)
 
-# Read and print the file's content to console.
-print(file.read())
+    # Read and print the file's content to console.
+    print(file.read())
+
+except FileNotFoundError:
+    print("File not found! [{}]".format(file_path))
