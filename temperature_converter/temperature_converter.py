@@ -27,6 +27,11 @@ def convert_temp(unit, temp):
     params: str(unit), float(temp)
     return: float(result)
     """
+    # Calculate result.
+    if unit == "C":
+        result = (temp * 1.8) + 32
+    elif unit == "F":
+        result = (temp - 32) / 1.8
 
     return result
 
@@ -36,9 +41,13 @@ print(header("Temperature Converter"))
 
 # User input.
 while True:
-    unit = input("Celsius or Fahrenheit (C/F)? ").strip().lower()
+    unit = input("Celsius or Fahrenheit (C/F)? ").strip().upper()
 
-    if unit == "c" or unit == "f":
+    if unit == "C":
+        target_unit = "F"
+        break
+    elif unit == "F":
+        target_unit = "C"
         break
     else:
         print("Invalid unit: \"{}\"".format(unit))
@@ -56,4 +65,4 @@ while True:
 result = convert_temp(unit, temp)
 
 # Print the rounded result.
-print("{} = {}".format(temp, result))
+print("{} {} = {} {}".format(temp, unit, round(result, 2), target_unit))
