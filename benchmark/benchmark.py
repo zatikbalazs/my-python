@@ -39,7 +39,7 @@ print(header("Simple System Benchmark"))
 # Difficulty level of benchmark.
 while True:
     try:
-        difficulty = int(input("Difficulty level (1000-100000): ").strip())
+        difficulty = int(input("Difficulty level (>=1000): ").strip())
         break
     except ValueError:
         print("Only numbers are accepted! Correct format: 10000")
@@ -48,23 +48,15 @@ while True:
 # Number of testing cycles.
 while True:
     try:
-        test_count = int(input("Number of testing cycles (1-10): ").strip())
+        test_count = int(input("Number of testing cycles (>=1): ").strip())
         break
     except ValueError:
         print("Only numbers are accepted! Correct format: 5")
         continue
 
-# Sleep time between cycles.
-while True:
-    try:
-        sleep_time = int(input("Sleep time between cycles (1-10): ").strip())
-        break
-    except ValueError:
-        print("Only numbers are accepted! Correct format: 5")
-        continue
-
-# Difficulty divided by 1000.
+# Short name of difficulty and sleep time.
 diff_short = round(difficulty / 1000)
+sleep_time = diff_short
 
 # Initialize test number.
 test_num = 1
