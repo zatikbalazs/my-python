@@ -40,23 +40,16 @@ print(header("Simple System Benchmark"))
 while True:
     try:
         difficulty = int(input("Difficulty level (>=1000): ").strip())
+        difficulty = int(difficulty / 1000) * 1000
         break
     except ValueError:
-        print("Only numbers are accepted! Correct format: 10000")
+        print("Only integer numbers are accepted! Correct format: 10000")
         continue
 
-# Number of testing cycles.
-while True:
-    try:
-        test_count = int(input("Number of testing cycles (>=1): ").strip())
-        break
-    except ValueError:
-        print("Only numbers are accepted! Correct format: 5")
-        continue
-
-# Short name of difficulty and sleep time.
-diff_short = round(difficulty / 1000)
+# Short name of difficulty, sleep time and testing cycles.
+diff_short = int(difficulty / 1000)
 sleep_time = diff_short
+test_count = diff_short
 
 # Initialize test number.
 test_num = 1
