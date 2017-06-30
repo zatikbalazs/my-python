@@ -48,8 +48,8 @@ while True:
 
 # Short name of difficulty, sleep time and testing cycles.
 diff_short = int(difficulty / 1000)
-sleep_time = diff_short
-test_count = diff_short
+sleep_time = 10
+test_count = 3
 
 # Initialize test number.
 test_num = 1
@@ -83,7 +83,7 @@ while test_num <= test_count:
     exec_time = round(time.time() - start_time, 2)
 
     # Print result.
-    print("Result #%d: %.2f s" % (test_num, exec_time))
+    print("Test %d of 3: %.2f s" % (test_num, exec_time))
 
     # Increase test number.
     test_num += 1
