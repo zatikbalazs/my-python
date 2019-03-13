@@ -2,8 +2,8 @@
 birthdays = {"Mom": "July 2",
              "Dad": "October 25",
              "Wife": "January 21",
-             "Brother": "June 26",
-             "Sister": "February 23"}
+             "Brother": "June 27",
+             "Sister": "February 24"}
 
 while True:
     # User input.
