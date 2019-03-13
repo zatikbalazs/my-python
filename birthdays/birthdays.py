@@ -1,9 +1,9 @@
 # Create a dictionary.
-birthdays = {"Mom": "July 2",
-             "Dad": "October 25",
-             "Wife": "January 21",
-             "Brother": "June 27",
-             "Sister": "February 24"}
+birthdays = {"Mom": "July 2nd",
+             "Dad": "October 25th",
+             "Wife": "January 21st",
+             "Brother": "June 27th",
+             "Sister": "February 24th"}
 
 while True:
     # User input.
@@ -16,7 +16,7 @@ while True:
 
     # If name is found, print birthday.
     if name in birthdays:
-        print("{} is the birthday of {}.\n".format(birthdays[name], name))
+        print("{}'s birthday is on {}.\n".format(name, birthdays[name]))
 
     # If name is not found, update database.
     else:
