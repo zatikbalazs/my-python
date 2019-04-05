@@ -38,7 +38,7 @@ while True:
                     if movies[choice]["seats"] > 0:
 
                         # Decrease the number of seats available.
-                        movies[choice]["seats"] = movies[choice]["seats"] - 1
+                        movies[choice]["seats"] -= 1
 
                         print("Here is your ticket. Enjoy the movie!")
                         print("Number of remaining free seats for this movie: {}".format(movies[choice]["seats"]))
@@ -49,7 +49,7 @@ while True:
                         if another == "y" or another == "yes":
                             continue
                         else:
-                            print("Thank you.")
+                            print("Thank you. Goodbye!")
                             break
 
                     else:
