@@ -123,8 +123,7 @@ while True:
 
                     # If move is invalid.
                     while not valid_move(board, move):
-                        print("Invalid move! Where to move?")
-                        move = input().strip().lower()
+                        move = input("Invalid move! Where to move? ").strip().lower()
 
                 else:
                     # Computer's move.
@@ -154,8 +153,7 @@ while True:
 
                 # If move is invalid.
                 while not valid_move(board, move):
-                    print("Invalid move! Where to move?")
-                    move = input().strip().lower()
+                    move = input("Invalid move! Where to move? ").strip().lower()
 
             # Update the board (dictionary).
             if turn == player_1:
