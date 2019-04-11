@@ -39,24 +39,28 @@ def check_win(board):
     """
     Checks whether player has won the game or not.
     params: dict(board)
-    return: bool(win)
+    return: bool
     """
-    if (board["top-l"] == "X" and board["top-m"] == "X" and board["top-r"] == "X") or (board["mid-l"] == "X" and board["mid-m"] == "X" and board["mid-r"] == "X") or (board["low-l"] == "X" and board["low-m"] == "X" and board["low-r"] == "X"):
-        win = True
-    elif (board["top-l"] == "X" and board["mid-l"] == "X" and board["low-l"] == "X") or (board["top-m"] == "X" and board["mid-m"] == "X" and board["low-m"] == "X") or (board["top-r"] == "X" and board["mid-r"] == "X" and board["low-r"] == "X"):
-        win = True
-    elif (board["top-l"] == "X" and board["mid-m"] == "X" and board["low-r"] == "X") or (board["top-r"] == "X" and board["mid-m"] == "X" and board["low-l"] == "X"):
-        win = True
-    elif (board["top-l"] == "O" and board["top-m"] == "O" and board["top-r"] == "O") or (board["mid-l"] == "O" and board["mid-m"] == "O" and board["mid-r"] == "O") or (board["low-l"] == "O" and board["low-m"] == "O" and board["low-r"] == "O"):
-        win = True
-    elif (board["top-l"] == "O" and board["mid-l"] == "O" and board["low-l"] == "O") or (board["top-m"] == "O" and board["mid-m"] == "O" and board["low-m"] == "O") or (board["top-r"] == "O" and board["mid-r"] == "O" and board["low-r"] == "O"):
-        win = True
-    elif (board["top-l"] == "O" and board["mid-m"] == "O" and board["low-r"] == "O") or (board["top-r"] == "O" and board["mid-m"] == "O" and board["low-l"] == "O"):
-        win = True
+    if (board["top-l"] == "X" and board["top-m"] == "X" and board["top-r"] == "X") or \
+       (board["mid-l"] == "X" and board["mid-m"] == "X" and board["mid-r"] == "X") or \
+       (board["low-l"] == "X" and board["low-m"] == "X" and board["low-r"] == "X") or \
+       (board["top-l"] == "X" and board["mid-l"] == "X" and board["low-l"] == "X") or \
+       (board["top-m"] == "X" and board["mid-m"] == "X" and board["low-m"] == "X") or \
+       (board["top-r"] == "X" and board["mid-r"] == "X" and board["low-r"] == "X") or \
+       (board["top-l"] == "X" and board["mid-m"] == "X" and board["low-r"] == "X") or \
+       (board["top-r"] == "X" and board["mid-m"] == "X" and board["low-l"] == "X") or \
+       (board["top-l"] == "O" and board["top-m"] == "O" and board["top-r"] == "O") or \
+       (board["mid-l"] == "O" and board["mid-m"] == "O" and board["mid-r"] == "O") or \
+       (board["low-l"] == "O" and board["low-m"] == "O" and board["low-r"] == "O") or \
+       (board["top-l"] == "O" and board["mid-l"] == "O" and board["low-l"] == "O") or \
+       (board["top-m"] == "O" and board["mid-m"] == "O" and board["low-m"] == "O") or \
+       (board["top-r"] == "O" and board["mid-r"] == "O" and board["low-r"] == "O") or \
+       (board["top-l"] == "O" and board["mid-m"] == "O" and board["low-r"] == "O") or \
+       (board["top-r"] == "O" and board["mid-m"] == "O" and board["low-l"] == "O"):
+        return True
     else:
-        win = False
+        return False
 
-    return win
 
 def valid_move(board, move):
     """
