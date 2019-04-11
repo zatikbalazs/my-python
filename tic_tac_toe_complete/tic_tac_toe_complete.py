@@ -62,14 +62,12 @@ def valid_move(board, move):
     """
     Checks whether move is valid or not.
     params: dict(board), str(move)
-    return: bool(valid_move)
+    return: bool
     """
     if move not in board.keys() or board[move] == "X" or board[move] == "O":
-        valid_move = False
+        return False
     else:
-        valid_move = True
-
-    return valid_move
+        return True
 
 
 
