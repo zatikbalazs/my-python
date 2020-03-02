@@ -1,6 +1,4 @@
-"""
-Calendar methods in Python.
-"""
+# Calendar methods in Python.
 
 # Import module.
 import calendar
@@ -21,5 +19,5 @@ output = calendar.weekday(1985, 10, 2)
 print(output)
 
 # Is leap year?
-output = calendar.isleap(2017)
+output = calendar.isleap(2020)
 print(output)

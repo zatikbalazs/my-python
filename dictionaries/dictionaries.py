@@ -1,6 +1,4 @@
-"""
-The basics of dictionaries in Python.
-"""
+# The basics of using dictionaries in Python.
 
 # Create a dictionary.
 player = {"name": "Doodle",
@@ -43,8 +41,14 @@ print(player.items())
 # Get all the keys.
 print(player.keys())
 
-# Check whether a key exists or not.
+# Check whether a key exists or not (1).
 if "name" in player.keys():
+    print(True)
+else:
+    print(False)
+
+# Check whether a key exists or not (2).
+if "name" in player:
     print(True)
 else:
     print(False)

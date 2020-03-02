@@ -1,17 +1,14 @@
-"""
-Simple system benchmarking tool.
-"""
+# Simple system benchmarking tool.
 
 # Modules.
 import time
 
 # Functions.
 def header(title):
-    """
-    Create a nice header.
-    params: str(title)
-    return: str(header)
-    """
+    # Create a nice header.
+    # params: str(title)
+    # return: str(header)
+
     # Get the length of title.
     length = len(title)
 
@@ -21,11 +18,10 @@ def header(title):
     return header
 
 def divide(a, b):
-    """
-    Simple division of two numbers.
-    params: int(a), int(b)
-    return: float(result)
-    """
+    # Simple division of two numbers.
+    # params: int(a), int(b)
+    # return: float(result)
+
     result = a / b
 
     return result
@@ -45,7 +41,7 @@ while True:
         print("Please enter a positive integer number!")
         continue
 
-# Short name of difficulty, sleep time and testing cycles.
+# Sleep time and testing cycles.
 sleep_time = 10
 test_count = 3
 

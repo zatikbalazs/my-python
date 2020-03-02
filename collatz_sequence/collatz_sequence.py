@@ -1,9 +1,8 @@
 def collatz(number):
-    """
-    Function for the "Collatz Sequence".
-    params: int(number)
-    return: int(new_number)
-    """
+    # Function for the "Collatz Sequence".
+    # params: int(number)
+    # return: int(new_number)
+
     # Even number given.
     if number % 2 == 0:
         new_number = number // 2
@@ -24,7 +23,7 @@ while True:
         # Get a number from user.
         number = int(input("\nPlease enter a number: ").strip())
 
-        ## Only accept positive integer numbers.
+        # Only accept positive integer numbers.
         if number > 0:
             # Call the collatz() function until it returns 1.
             while number != 1:

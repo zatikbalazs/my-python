@@ -1,10 +1,8 @@
 # Define function.
 def format_list(mylist):
-    """
-    This function transforms a list into a formatted string.
-    params: list(mylist)
-    return: str(string)
-    """
+    # This function transforms a list into a formatted string.
+    # params: list(mylist)
+    # return: str(string)
 
     # Initialize variable.
     string = ""
@@ -21,7 +19,7 @@ def format_list(mylist):
 
         # Use "and" before the last item.
         elif index == list_length - 2:
-            string += item + ", and "
+            string += item + " and "
 
         # The last item.
         else:

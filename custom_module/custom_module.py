@@ -1,6 +1,4 @@
-"""
-This file demonstrates the usage of a custom module.
-"""
+# This file demonstrates the usage of a custom module.
 
 # Import the custom module.
 # It has to be in the same directory as the file running.
