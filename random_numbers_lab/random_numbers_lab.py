@@ -1,12 +1,10 @@
-"""
-Random Numbers Lab
-------------------
-Write a program that uses a while loop to generate
-100 random numbers between 1 and 10. After the program
-prints out all the random numbers output the sum of all
-the random numbers generated and the average of all the
-random numbers generated.
-"""
+# Random Numbers Lab
+# ------------------
+# Write a program that uses a while loop to generate
+# 100 random numbers between 1 and 10. After the program
+# prints out all the random numbers output the sum of all
+# the random numbers generated and the average of all the
+# random numbers generated.
 
 # Import random module.
 import random

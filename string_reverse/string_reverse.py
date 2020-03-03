@@ -1,12 +1,11 @@
 def reverse_string(string):
-    """
-    Reverse any string.
-    params: str(string)
-    return: str(reversed_string)
+    # Reverse any string.
+    # params: str(string)
+    # return: str(reversed_string)
+    #
+    # Note: this function can reverse any
+    # iterable data type (string, list, tuple).
 
-    Note: this function can reverse any
-    iterable data type (string, list, tuple).
-    """
     # Reverse the string.
     reversed_string = string[::-1]
 

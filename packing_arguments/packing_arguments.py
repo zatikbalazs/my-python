@@ -1,7 +1,5 @@
-"""
-Demonstration of packing and unpacking
-arguments and keyword arguments.
-"""
+# Demonstration of packing and unpacking
+# arguments and keyword arguments.
 
 # Packing/unpacking arguments.
 def add(*args):

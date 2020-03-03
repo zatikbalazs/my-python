@@ -2,11 +2,10 @@
 
 # Define functions.
 def header(title):
-    """
-    Prints out a nice header.
-    params: str(title)
-    return: str(header)
-    """
+    # Prints out a nice header.
+    # params: str(title)
+    # return: str(header)
+
     # Get the length of title.
     length = len(title)
 

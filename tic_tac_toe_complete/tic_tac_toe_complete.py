@@ -6,11 +6,10 @@ import time
 
 # Define functions.
 def header(title):
-    """
-    Prints out a nice header.
-    params: str(title)
-    return: str(header)
-    """
+    # Prints out a nice header.
+    # params: str(title)
+    # return: str(header)
+
     # Get the length of title.
     length = len(title)
 
@@ -21,11 +20,10 @@ def header(title):
 
 
 def show_board(board):
-    """
-    Shows the board with the current position.
-    params: dict(board)
-    return: None
-    """
+    # Displays the board with the current position.
+    # params: dict(board)
+    # return: None
+
     print()
     print(board["top-l"] + "|" + board["top-m"] + "|" + board["top-r"])
     print("-+-+-")
@@ -36,11 +34,10 @@ def show_board(board):
 
 
 def check_win(board):
-    """
-    Checks whether player has won the game or not.
-    params: dict(board)
-    return: bool
-    """
+    # Checks whether player has won the game or not.
+    # params: dict(board)
+    # return: bool
+
     if (board["top-l"] == "X" and board["top-m"] == "X" and board["top-r"] == "X") or \
        (board["mid-l"] == "X" and board["mid-m"] == "X" and board["mid-r"] == "X") or \
        (board["low-l"] == "X" and board["low-m"] == "X" and board["low-r"] == "X") or \
@@ -63,11 +60,10 @@ def check_win(board):
 
 
 def valid_move(board, move):
-    """
-    Checks whether move is valid or not.
-    params: dict(board), str(move)
-    return: bool
-    """
+    # Checks whether move is valid or not.
+    # params: dict(board), str(move)
+    # return: bool
+
     if move not in board.keys() or board[move] == "X" or board[move] == "O":
         return False
     else:

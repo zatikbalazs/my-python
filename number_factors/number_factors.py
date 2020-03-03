@@ -1,10 +1,9 @@
 # Define functions.
 def header(title):
-    """
-    Prints out a nice header.
-    params: str(title)
-    return: str(header)
-    """
+    # Prints out a nice header.
+    # params: str(title)
+    # return: str(header)
+
     # Get the length of title.
     length = len(title)
 
@@ -14,11 +13,10 @@ def header(title):
     return header
 
 def show_factors(number):
-    """
-    Shows factors of the given number.
-    params: int(number)
-    return: list(factors)
-    """
+    # Shows factors of the given number.
+    # params: int(number)
+    # return: list(factors)
+
     # Create list for factor pairs.
     factors = ["1, " + str(number)]
 

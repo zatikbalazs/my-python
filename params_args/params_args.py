@@ -1,7 +1,5 @@
-"""
-Learn about parameters, default parameters,
-arguments and keyword arguments.
-"""
+# Learn about parameters, default parameters,
+# arguments and keyword arguments.
 
 # PARAMETERS of the function.
 def add(a, b):

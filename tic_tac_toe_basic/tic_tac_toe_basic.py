@@ -2,11 +2,10 @@
 
 # Define functions.
 def print_board():
-    """
-    Shows the board with the current position.
-    params: None
-    return: None
-    """
+    # Shows the board with the current position.
+    # params: None
+    # return: None
+
     row1 = "|{}|{}|{}|".format(board[0], board[1], board[2])
     row2 = "|{}|{}|{}|".format(board[3], board[4], board[5])
     row3 = "|{}|{}|{}|".format(board[6], board[7], board[8])
@@ -18,11 +17,10 @@ def print_board():
     print()
 
 def player_move(icon):
-    """
-    Handles the next move of the player.
-    params: str(icon)
-    return: None
-    """
+    # Handles the next move of the player.
+    # params: str(icon)
+    # return: None
+
     if icon == "X":
         number = 1
     elif icon == "O":
@@ -49,11 +47,10 @@ def player_move(icon):
             player_move("O")
 
 def is_victory(icon):
-    """
-    Checks whether player has won the game or not.
-    params: str(icon)
-    return: bool
-    """
+    # Checks whether player has won the game or not.
+    # params: str(icon)
+    # return: bool
+
     if (board[0] == icon and board[1] == icon and board[2] == icon) or \
        (board[3] == icon and board[4] == icon and board[5] == icon) or \
        (board[6] == icon and board[7] == icon and board[8] == icon) or \
@@ -67,11 +64,10 @@ def is_victory(icon):
         return False
 
 def is_draw():
-    """
-    Checks whether the game is a draw or not.
-    params: None
-    return: bool
-    """
+    # Checks whether the game is a draw or not.
+    # params: None
+    # return: bool
+
     if " " not in board:
         return True
     else:

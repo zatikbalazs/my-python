@@ -1,9 +1,6 @@
-"""
-Read content of a text file.
-
-Step 1: open file with open().
-Step 2: read content with read().
-"""
+# Read content of a text file.
+# Step 1: open file with open().
+# Step 2: read content with read().
 
 # Open file.
 try:

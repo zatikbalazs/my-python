@@ -1,18 +1,16 @@
-"""
-Tuple & Dictionary Lab Exercise
--------------------------------
-Step 1: Using a for loop, loop through each element of the gpas
-        tuple and output the average gpa stored in the tuple.
-
-Step 2: Instead of using a tuple, let's store the same data in
-        a dictionary so that each GPA value is identified by a
-        string key containing the name of the person who achieved
-        the GPA.
-
-Step 3: Using the dictionary you just created, again calculate
-        the average and output the average, and who achieved the
-        highest and lowest GPA from the dictionary.
-"""
+# Tuple & Dictionary Lab Exercise
+# -------------------------------
+# Step 1: Using a for loop, loop through each element of the gpas
+#         tuple and output the average gpa stored in the tuple.
+#
+# Step 2: Instead of using a tuple, let's store the same data in
+#         a dictionary so that each GPA value is identified by a
+#         string key containing the name of the person who achieved
+#         the GPA.
+#
+# Step 3: Using the dictionary you just created, again calculate
+#         the average and output the average, and who achieved the
+#         highest and lowest GPA from the dictionary.
 
 # ------
 # Step 1

@@ -1,10 +1,8 @@
-"""
-Write to a text file.
-
-Step 1: open file with open().
-Step 2: write to file with write().
-Step 3: close file with close().
-"""
+# Write to a text file.
+#
+# Step 1: open file with open().
+# Step 2: write to file with write().
+# Step 3: close file with close().
 
 # Open file for writing.
 file = open("example.txt", "w") # Use "a" to append to the end of file.

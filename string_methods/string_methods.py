@@ -1,6 +1,4 @@
-"""
-This is my collection of the most useful string methods.
-"""
+# This is my collection of the most useful string methods.
 
 # This example string will be used throughout the file.
 string = "Silence will breed wisdom."

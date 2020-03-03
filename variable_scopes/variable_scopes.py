@@ -1,7 +1,5 @@
-"""
-Demonstration of different cases
-regarding the scopes of variables.
-"""
+# Demonstration of different cases
+# regarding the scopes of variables.
 
 # CASE 1:
 # Global and local variables are completely separated.

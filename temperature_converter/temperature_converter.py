@@ -1,16 +1,13 @@
-"""
-Coding Exercise: Functions
-
-Write a function that will convert either a Celsius temperature
-to a Fahrenheit temperature or a Fahrenheit temperature to Celsius.
-"""
+# Coding Exercise: Functions
+#
+# Write a function that will convert either a Celsius temperature
+# to a Fahrenheit temperature or a Fahrenheit temperature to Celsius.
 
 def header(title):
-    """
-    Create a nice header.
-    params: str(title)
-    return: str(header)
-    """
+    # Create a nice header.
+    # params: str(title)
+    # return: str(header)
+
     # Get the length of title.
     length = len(title)
 
@@ -21,12 +18,11 @@ def header(title):
 
 
 def convert_temp(unit, temp):
-    """
-    Convert either a Celsius temperature to a Fahrenheit
-    temperature or a Fahrenheit temperature to Celsius.
-    params: str(unit), float(temp)
-    return: float(result)
-    """
+    # Convert either a Celsius temperature to a Fahrenheit
+    # temperature or a Fahrenheit temperature to Celsius.
+    # params: str(unit), float(temp)
+    # return: float(result)
+
     # Calculate result.
     if unit == "C":
         result = (temp * 1.8) + 32

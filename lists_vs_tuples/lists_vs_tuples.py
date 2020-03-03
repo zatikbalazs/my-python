@@ -1,14 +1,12 @@
-"""
-Lists Vs Tuples
----------------
-1. A list is a mutable data type.
-   A tuple is an IMMUTABLE data type.
-   Tuples are basically immutable lists (sequences).
-   A tuple's values and the order of values cannot be changed.
-
-2. Lists are created with hard brackets [].
-   Tuples are created with parentheses ().
-"""
+# Lists Vs Tuples
+# ---------------
+# 1. A list is a mutable data type.
+#    A tuple is an IMMUTABLE data type.
+#    Tuples are basically immutable lists (sequences).
+#    A tuple's values and the order of values cannot be changed.
+# 
+# 2. Lists are created with hard brackets [].
+#    Tuples are created with parentheses ().
 
 # List.
 cars = ["Mercedes", "Volvo", "Ford", "Honda"]

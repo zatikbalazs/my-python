@@ -3,11 +3,10 @@ import re
 
 # Define functions.
 def header(title):
-    """
-    Prints out a nice header.
-    params: str(title)
-    return: str(header)
-    """
+    # Prints out a nice header.
+    # params: str(title)
+    # return: str(header)
+
     # Get the length of title.
     length = len(title)
 
@@ -17,22 +16,20 @@ def header(title):
     return header
 
 def get_line_count(filename):
-    """
-    Counts number of lines in a file.
-    params: str(filename)
-    return: int(line_count)
-    """
+    # Counts number of lines in a file.
+    # params: str(filename)
+    # return: int(line_count)
+
     with open(filename) as file:
         line_count = sum(1 for _ in file)
 
     return line_count
 
 def get_char_list(text, sort=True):
-    """
-    Creates statistics for all characters in text.
-    params: str(text), bool(sort)
-    return: list(char_list)
-    """
+    # Creates statistics for all characters in text.
+    # params: str(text), bool(sort)
+    # return: list(char_list)
+
     char_dict = {}
 
     for char in text.lower():
@@ -45,11 +42,10 @@ def get_char_list(text, sort=True):
     return char_list
 
 def get_word_list(text, sort=True):
-    """
-    Creates statistics for all words in text.
-    params: str(text), bool(sort)
-    return: list(word_list)
-    """
+    # Creates statistics for all words in text.
+    # params: str(text), bool(sort)
+    # return: list(word_list)
+
     word_dict = {}
 
     text_clean = re.sub("[\.\?\!]", "", text).lower()
@@ -64,11 +60,10 @@ def get_word_list(text, sort=True):
     return word_list
 
 def get_keyword_density(keyword, text):
-    """
-    Calculate keyword density in the given text.
-    params: str(keyword), str(text)
-    return: int(keyword_count), float(keyword_density)
-    """
+    # Calculate keyword density in the given text.
+    # params: str(keyword), str(text)
+    # return: int(keyword_count), float(keyword_density)
+
     # Prepare keyword and text.
     keyword = keyword.lower()
     text_clean = re.sub("[\.\?\!]", "", text).lower()

@@ -1,6 +1,4 @@
-"""
-The most common time methods in Python.
-"""
+# The most common time methods in Python.
 
 # Import module.
 import time

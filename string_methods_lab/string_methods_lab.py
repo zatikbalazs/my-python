@@ -1,13 +1,11 @@
-"""
-String Methods Lab
-------------------
-Step 1: Create some multi-line text and store it in a variable.
-Step 2: Using a loop, output each line and character number of the string.
-        For example line 2, character 2 is an "a".
-Step 3: Alter your code so that the word "Capital" is printed to the right
-        of each capital letter in your output.
-Step 4: Indicate new lines in your output with the text: "- New Line -"
-"""
+# String Methods Lab
+# ------------------
+# Step 1: Create some multi-line text and store it in a variable.
+# Step 2: Using a loop, output each line and character number of the string.
+#         For example line 2, character 2 is an "a".
+# Step 3: Alter your code so that the word "Capital" is printed to the right
+#         of each capital letter in your output.
+# Step 4: Indicate new lines in your output with the text: "- New Line -"
 
 # Create multi-line text.
 text  = "This is the first line of my text.\n"
