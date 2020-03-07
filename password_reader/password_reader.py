@@ -1,5 +1,5 @@
 # Open file and read in password.
-file = open("secretpassword.txt")
+file = open("secretpassword.txt", "r")
 password = file.read().strip()
 
 # Get password from user.

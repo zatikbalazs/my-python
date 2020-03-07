@@ -1,6 +1,6 @@
 # Define functions.
 def header(title):
-    # Prints out a nice header.
+    # Print out a nice header.
     # params: str(title)
     # return: str(header)
 
@@ -13,7 +13,7 @@ def header(title):
     return header
 
 def show_factors(number):
-    # Shows factors of the given number.
+    # Show factors of the given number.
     # params: int(number)
     # return: list(factors)
 

@@ -43,9 +43,6 @@ while True:
         # Create empty list of winning numbers.
         winning_numbers = []
 
-        # Initialize "number" variable.
-        number = None
-
         # Generate winning numbers.
         while len(winning_numbers) < how_many:
 

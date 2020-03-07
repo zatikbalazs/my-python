@@ -1,6 +1,6 @@
 # Define functions.
 def header(title):
-    # Prints out a nice header.
+    # Print out a nice header.
     # params: str(title)
     # return: str(header)
 

@@ -1,4 +1,4 @@
-# Lists Vs Tuples
+# Lists VS Tuples
 # ---------------
 # 1. A list is a mutable data type.
 #    A tuple is an IMMUTABLE data type.

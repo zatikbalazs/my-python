@@ -1,6 +1,6 @@
 # Define functions.
 def print_inventory(inventory):
-    # Prints inventory with values.
+    # Print inventory with values.
     # params: dict(inventory)
 
     total_items = 0
@@ -20,7 +20,7 @@ def print_inventory(inventory):
 
 
 def add_to_inventory(inventory, new_items):
-    # Adds new items to an existing inventory.
+    # Add new items to an existing inventory.
     # params: dict(inventory), list(new_items)
     # return: dict(inventory)
 

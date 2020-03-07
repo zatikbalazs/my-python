@@ -31,7 +31,7 @@ print(len(player))
 # Stringify a dictionary.
 print(str(player))
 
-# Clear all the values.
+# Remove all keys and values from the dictionary.
 # player.clear()
 # print(player)
 
