@@ -3,11 +3,11 @@
 # Import random module.
 import random
 
-# Random float: 0.0 <= x < 1.0
+# Random float: 0.0 <= n < 1.0
 result = random.random()
 print(result)
 
-# Random float:  2.5 <= x < 10.0
+# Random float:  2.5 <= n < 10.0
 result = random.uniform(2.5, 10.0)
 print(result)
 

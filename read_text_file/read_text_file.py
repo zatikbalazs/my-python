@@ -5,7 +5,7 @@
 # Open file.
 try:
     file_path = "example.txt"
-    file = open(file_path)
+    file = open(file_path, "r")
 
     # Read and print the file's content to console.
     print(file.read())
