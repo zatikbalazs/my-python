@@ -106,6 +106,6 @@ def func2():
 func1()
 func2()
 
-# Print the value of the global variables.
+# Print the values of the global variables.
 print(a)
 print(b)
